@@ -1,18 +1,23 @@
-
-import React, { useState } from "react";
-
-
+import React from "react";
+import { Icon, useColorMode } from "@chakra-ui/react";
+import { BsFillSunFill, BsFillMoonFill } from "react-icons/bs";
 import styles from "./styles.module.css";
 
-
 const Header = () => {
-
+  const { colorMode, toggleColorMode } = useColorMode();
 
   return (
-    <div className={`${styles["wrapper"]} sticky top-0 z-10`}>
-   
+    <div className={styles.modeBg}>
+      <div className={styles.mode}>
+        <button className={styles.lightMode} onClick={toggleColorMode}>
+          <Icon as={BsFillSunFill} /> Light
+        </button>
+        <button className={styles.darkMode} onClick={toggleColorMode}>
+          <Icon as={BsFillMoonFill} /> Dark
+        </button>
+      </div>
     </div>
   );
 };
 
-export { Header };
+export default Header;

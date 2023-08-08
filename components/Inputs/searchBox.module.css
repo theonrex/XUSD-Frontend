@@ -1,0 +1,44 @@
+.searchBox {
+    background: #e2eef1;
+    border-radius: 1em;
+    position: relative;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    border: solid 1px transparent;
+}
+.searchBox input{
+
+    background: transparent !important;
+
+}
+
+.searchBox input[type="text"] {
+    background: 0 0;
+    color: #232226;
+    border: 1px solid transparent !important;
+    width: 100%;
+    padding: 15px;
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: inherit;
+    border-radius: 12px;
+    position: relative;
+    -webkit-appearance: none;
+    -webkit-transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
+    transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
+    outline: 0;
+}
+.searchBox svg{
+        border: none;
+    background: #ffffff;
+  
+    border-radius: 200px;
+    height: 2rem;
+    width: 2rem;
+    position: absolute;
+    left: 10px;
+    padding: 0.5em;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
