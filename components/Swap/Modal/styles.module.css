@@ -1,0 +1,16 @@
+/* PayModal */
+.PayModal{
+    background-color: black;
+}
+.PayModal .ModalBody{
+    background-color: #0a0208 !important;
+}
+
+.PayModal .ModalBody h3{
+    color: white;
+}
+
+.PayModal .swapCoin svg,
+.PayModal .SelectToken svg {
+    margin-left: 0.3em;
+}

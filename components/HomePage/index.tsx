@@ -6,7 +6,7 @@ export default function HomeSection() {
   return (
     <div>
       <Banner />
-      <About />
+      {/* <About /> */}
     </div>
   );
 }

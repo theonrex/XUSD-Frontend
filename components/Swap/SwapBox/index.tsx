@@ -4,6 +4,8 @@ import { Button } from "@chakra-ui/button";
 import { BsArrowDownShort } from "react-icons/bs";
 import { AiFillSetting } from "react-icons/ai";
 import { ConnectWallet } from "@thirdweb-dev/react";
+import PayModal from "../Modal/PayModal";
+import ReceiveModal from "../Modal/receiveModal";
 export default function SwapBox() {
   return (
     <div className={`container mx-auto`}>
@@ -22,7 +24,9 @@ export default function SwapBox() {
             <h3>You pay</h3>
             <h1>0</h1>
           </section>
-          <section>ETH</section>
+          <section>
+            <PayModal />
+          </section>
         </div>
         <div className={styles.arrowDown}>
           <BsArrowDownShort />
@@ -33,8 +37,7 @@ export default function SwapBox() {
             <h1>0</h1>
           </section>
           <section>
-            {" "}
-            <Button>Select token</Button>{" "}
+            <ReceiveModal />
           </section>
         </div>
         <div className={styles.walletBTN}>

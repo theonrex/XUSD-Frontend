@@ -10,10 +10,12 @@ export default function Banner() {
       <div className={`${styles.col50} ${styles.hero}`}>
         <h1>Trade crypto and NFTs with confidence</h1>
         <p>Buy, sell, and explore tokens and NFTs</p>
-        <Button className={styles.view_market}>
-          {" "}
-          <Link href="/swap"> Get Started</Link>{" "}
-        </Button>{" "}
+        <div className={styles.getStarted}>
+          <Button >
+            {" "}
+            <Link href="/swap"> Get Started</Link>{" "}
+          </Button>{" "}
+        </div>
       </div>
       <div className={styles.col50}>
         <Image src={BannerImg} alt="Banner" width={700} />

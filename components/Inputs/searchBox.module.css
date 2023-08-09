@@ -1,10 +1,8 @@
 .searchBox {
-    background: #e2eef1;
-    border-radius: 1em;
+    border-radius: 0;
     position: relative;
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
-    border: solid 1px transparent;
 }
 .searchBox input{
 
@@ -12,21 +10,26 @@
 
 }
 
-.searchBox input[type="text"] {
+.searchBox input[type="search"],
+.searchBox input[type="search"]:focus,
+.searchBox input[type="search"]:hover,
+.searchBox input[type="search"]::after,
+.searchBox input[type="search"]:active {
+        padding: 0 3em;
+
     background: 0 0;
     color: #232226;
-    border: 1px solid transparent !important;
+    border: none !important;
     width: 100%;
-    padding: 15px;
     line-height: 1.5;
     font-weight: 400;
+    border-radius: 0 !important;
     font-size: inherit;
-    border-radius: 12px;
     position: relative;
     -webkit-appearance: none;
     -webkit-transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
     transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
-    outline: 0;
+    outline: none !important;
 }
 .searchBox svg{
         border: none;
