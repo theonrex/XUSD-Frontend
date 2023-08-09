@@ -1,8 +1,12 @@
-import React from 'react'
-import Banner from './Banner/index'
+import React from "react";
+import Banner from "./Banner/index";
+import About from "./AboutUs";
 
-export default function Homepage() {
+export default function HomeSection() {
   return (
-    <div><Banner/></div>
-  )
+    <div>
+      <Banner />
+      <About />
+    </div>
+  );
 }

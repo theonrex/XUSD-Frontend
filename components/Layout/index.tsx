@@ -2,7 +2,7 @@ import Head from "next/head";
 import { ReactComponentElement } from "react";
 import { Footer } from "../../components";
 import Header from "../Header";
-import Navbar from "../Navbar";
+import Nav from "../Navbar";
 import styles from "./styles.module.css";
 const AppLayout = ({ children }: { children: ReactComponentElement<any> }) => {
   return (
@@ -15,7 +15,7 @@ const AppLayout = ({ children }: { children: ReactComponentElement<any> }) => {
         <meta name="keywords" content=""></meta>
       </Head>
       <Header />
-      <Navbar/>
+      <Nav />
       <main className={`${styles["container"]} pt-10 md:pt-14`}>
         {children}
       </main>

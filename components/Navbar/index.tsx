@@ -3,16 +3,18 @@ import SearchBox from "../Inputs/searchBox";
 import Image from "next/image";
 import { XusdLogo } from "../../assets";
 import Link from "next/link";
-export default function Navbar() {
+import { ConnectWallet } from "@thirdweb-dev/react";
+
+export default function Nav() {
   return (
     <div className="container mx-auto mt-4">
       <nav
-        className=" max-w-[85rem] w-full mx-auto  px-4 sm:flex sm:items-center sm:justify-between"
+        className="flex max-w-[85rem] w-full mx-auto  px-4 sm:flex sm:items-center sm:justify-between"
         aria-label="Global"
       >
-        <div className="">
+        <div className="flex items-center ">
           <Link
-            className="flex items-center justify-between text-xl font-semibold  dark:text-gray-800"
+            className="flex items-center text-xl font-semibold  dark:text-gray-800"
             href="/"
           >
             <Image src={XusdLogo} alt="XUD" width={50} />{" "}
@@ -60,19 +62,19 @@ export default function Navbar() {
               href="/"
               aria-current="page"
             >
-              Home
+              Swap
             </Link>
             <Link
               className="font-medium text-gray-400 text-xl hover:text-gray-500 dark:text-gray-500 dark:hover:text-gray-400"
               href="/marketplace"
             >
-              Marketplace
+              Tokens
             </Link>
             <Link
               className="font-medium text-gray-400 text-xl hover:text-gray-500 dark:text-gray-500 dark:hover:text-gray-400"
               href="#"
             >
-              Collections
+              NFTs
             </Link>
             <Link
               className="font-medium text-gray-400 text-xl hover:text-gray-500 dark:text-gray-500 dark:hover:text-gray-400"
@@ -80,24 +82,9 @@ export default function Navbar() {
             >
               Profile
             </Link>{" "}
-            <Link
-              className="font-medium text-gray-400 text-xl hover:text-gray-500 dark:text-gray-500 dark:hover:text-gray-400"
-              href="#"
-            >
-              Creators
-            </Link>{" "}
-            <Link
-              className="font-medium text-gray-400 text-xl hover:text-gray-500 dark:text-gray-500 dark:hover:text-gray-400"
-              href="#"
-            >
-              <SearchBox />
-            </Link>{" "}
-            <Link
-              className="font-medium text-gray-400 text-xl hover:text-gray-500 dark:text-gray-500 dark:hover:text-gray-400"
-              href="#"
-            >
-              Profile
-            </Link>
+            <div className="font-medium text-gray-400 text-xl hover:text-gray-500 dark:text-gray-500 dark:hover:text-gray-400">
+              <ConnectWallet />{" "}
+            </div>{" "}
           </div>
         </div>
       </nav>

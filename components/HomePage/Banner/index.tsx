@@ -8,14 +8,12 @@ export default function Banner() {
   return (
     <div className={`${styles.banner} ${styles.rowx} container mx-auto`}>
       <div className={`${styles.col50} ${styles.hero}`}>
-        <h1>Discover digital art and collect NFTs</h1>
-        <p>
-          raroin is a shared liquidity NFT market smart contract which is used
-          by multiple websites to provide the users the best possible
-          experience.
-        </p>
-        <Button className={styles.view_market}>View Market</Button>{" "}
-        <Button className={styles.upload_item}> Upload your item</Button>
+        <h1>Trade crypto and NFTs with confidence</h1>
+        <p>Buy, sell, and explore tokens and NFTs</p>
+        <Button className={styles.view_market}>
+          {" "}
+          <Link href="/swap"> Get Started</Link>{" "}
+        </Button>{" "}
       </div>
       <div className={styles.col50}>
         <Image src={BannerImg} alt="Banner" width={700} />
