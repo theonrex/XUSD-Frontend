@@ -1,16 +1,23 @@
 /* PayModal */
-.PayModal{
-    background-color: black;
-}
-.PayModal .ModalBody{
-    background-color: #0a0208 !important;
+.PayModal .ModalBody {
+  background-color: #0a0208 !important;
 }
 
-.PayModal .ModalBody h3{
-    color: white;
+.PayModal .ModalBody h3 {
+  color: white;
 }
 
 .PayModal .swapCoin svg,
 .PayModal .SelectToken svg {
-    margin-left: 0.3em;
+  margin-left: 0.3em;
+}
+
+@media screen and (max-width: 363px) {
+  .PayModal button {
+    font-size: 0.6em;
+    padding: 0.5em 0.9em;
+  }
+  .PayModal .ModalBody h3 {
+    font-size: 0.8em;
+  }
 }
