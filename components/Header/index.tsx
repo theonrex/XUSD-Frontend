@@ -79,7 +79,7 @@ const Header = () => {
                 className="font-medium text-white text-xl hover:text-gray-500 dark:text-gray-500 dark:hover:text-white"
                 href="https://ainft-three.vercel.app/"
               >
-                Mint AI NFTs
+                Mint AIFT
               </Link>
               <Link
                 className="font-medium text-white text-xl hover:text-gray-500 dark:text-gray-500 dark:hover:text-white"
